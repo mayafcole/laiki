@@ -1,22 +1,44 @@
 const ShopByCountry = () => {
-    return (
-      <section className="py-12 bg-pink-100">
-        <h2 className="text-3xl font-bold text-center mb-4">Shop by country</h2>
-        <p className="text-center mb-4 text-gray-700">
-          Select what part of the world you want to explore
-        </p>
-        <div className="flex justify-center">
-          <select className="border border-gray-300 rounded-lg px-4 py-2 w-72">
+  return (
+    <section className="relative py-60 bg-pink overflow-hidden mt-40 ">
+      {/* Background map image */}
+      <img
+        src="/src/assets/Laiki-map.png"
+        alt="World map background"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 z-0"
+      />
+
+      {/* Section heading */}
+      <h2 className="text-textHeader font-heading font-semibold text-headers text-left pl-20 mb-8 relative z-10">
+        Shop by country
+      </h2>
+
+      {/* Subheading */}
+      <p className="text-center mb-10 font-body text-hero-subtitle text-textHeader relative z-10">
+        Select what part of the world you want to explore
+      </p>
+
+      {/* Dropdown with custom arrow */}
+      <div className="flex justify-center relative z-10">
+        <div className="relative w-[900px]">
+          <select className="appearance-none border border-textHeader text-textHeader rounded-lg px-6 py-3 w-full text-lg bg-white focus:outline-none focus:ring-2 focus:ring-textHeader cursor-pointer">
             <option value="">Select</option>
-            <option value="africa">Africa</option>
-            <option value="asia">Asia</option>
-            <option value="europe">Europe</option>
-            <option value="south-america">South America</option>
+            <option value="brazil">Brazil</option>
+            <option value="usa">United States of America</option>
+            <option value="france">France</option>
+            <option value="thailand">Thailand</option>
+            <option value="peru">Peru</option>
           </select>
+
+          {/* Custom arrow icon positioned towards the left */}
+          <div className="pointer-events-none absolute right-4 top-1/2 transform -translate-y-1/2 text-textHeader text-xl">
+            ▼
+          </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default ShopByCountry;
+      </div>
+    </section>
+  );
+};
+
+export default ShopByCountry;
   

@@ -2,7 +2,7 @@ import { FiShoppingCart, FiUser } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-10 py-4 shadow-md bg-white">
+    <nav className="flex justify-between items-center px-10 py-4 bg-white">
       {/* Left links */}
       <div className="space-x-6 text-sm">
       <a href="#" className="text-gray-600 hover:text-black no-underline font-body">Meet the Artisans</a>

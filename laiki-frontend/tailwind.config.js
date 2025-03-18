@@ -9,9 +9,10 @@ export default {
       colors: {
         pink: '#FFDCDC', // light pink
         accent: '#FF6E6E',
-        background: '#FFF8F0',
+        background: '#F8E8E8',
         textMain: '#1B0505',
         textHeader: '#6B0A0A',
+        black: '#000000'
       },
       fontFamily: {
         heading: ['"Krub"', 'serif'], 
@@ -23,10 +24,25 @@ export default {
         'headers': '35px', // Custom size for hero paragraph text (20px)
         'product-subtitle': '18px', // Custom size for hero paragraph text (20px)
         'product-title': '22px', // Custom size for hero paragraph text (20px)
+        'product-price': '24px', // Custom size for hero paragraph text (20px)
+
 
 
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* For WebKit browsers */
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
+        },
+        '.scrollbar-hide::-webkit-scrollbar': {
+          display: 'none',
+        },
+      });
+    },
+  ],
 }

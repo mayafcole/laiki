@@ -2,7 +2,7 @@ const Footer = () => {
     return (
       <footer className="bg-pink-50 py-10 mt-12">
         <div className="text-center mb-6">
-          <h3 className="text-xl font-bold mb-2">Welcome to the community!</h3>
+          <h3 className="text-xl font-body mb-2">Welcome to the community!</h3>
           <p className="mb-4">
             Sign up for our email list to stay up to date with the latest at <strong>Laiki</strong>.
           </p>
@@ -12,7 +12,7 @@ const Footer = () => {
             className="px-4 py-2 rounded border border-gray-300 w-72 mb-4"
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-8 text-center md:text-left text-sm text-gray-700">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-8 text-left font-body md:text-left text-sm text-gray-700">
           <div>
             <h4 className="font-semibold mb-2">Shop</h4>
             <ul>
@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-xs text-gray-500 mt-6">© 2024 Laiki. All rights reserved.</p>
+        <p className="text-center font-body text-xs text-black mt-6">© 2024 Laiki. All rights reserved.</p>
       </footer>
     );
   };

@@ -1,26 +1,36 @@
 import ProductCard from "./ProductCard";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useRef } from "react";
+
 
 const FeaturedProducts = () => {
 
   const products = [
     { image: "/src/assets/NavyBeanie.png", subtitle: "Fashion & Accessories", title: "Navy blue crochet beanie", price: 40 },
-    { image: "/src/assets/BlueTeapot.png" , subtitle: "Pottery & Cermanics", title: "Aquamarine teapot set", price: 80 },
+    { image: "/src/assets/BlueTeapot.png" , subtitle: "Pottery & Ceramics", title: "Aquamarine teapot set", price: 80 },
     { image: "/src/assets/Totebag.png", subtitle: "Fashion & Accessories", title: "Cherry Blossom tote bag", price: 20 },
+    { image: "/src/assets/JadeNecklace.png", subtitle: "Fashion & Accessories", title: "Jade necklace", price: 220 },
+    { image: "/src/assets/EthopianPlate.png" , subtitle: "Pottery & Ceramics", title: "Ethopian plate", price: 50 },
+    { image: "/src/assets/SheaButter.png", subtitle: "Beauty & Wellness", title: "Shea butter", price: 35 },
   ];
 
+  
+
   return (
-    <section className="relative mt-5">
-      {/* Background block positioned above and behind the text */}
-      <div className="absolute top-[25px] left-0 w-full h-24 bg-pink -z-10"></div>
+    <section className="relative mt-10">
+    {/* Background block behind the header */}
+    <div className="absolute top-0 left-0 w-full h-20 bg-pink -z-10"></div>
 
-      {/* Header text */}
-      <h2 className="text-textHeader font-heading-semibold text-headers pl-10">Featured Products</h2>
+    <h2 className="text-textHeader font-heading-semibold text-headers pl-10 pt-12">
+      Featured Products
+    </h2>
 
-      {/* Products grid */}
-      <div className="max-w-6xl mx-auto py-60 px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div className="overflow-x-auto scrollbar-hide">
+        <div className="flex gap-8 px-6 pb-10 w-max">
           {products.map((product, index) => (
-            <ProductCard key={index} {...product} />
+            <div key={index} className="flex-shrink-0">
+              <ProductCard {...product} />
+            </div>
           ))}
         </div>
       </div>
