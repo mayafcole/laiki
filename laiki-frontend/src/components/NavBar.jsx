@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { FiShoppingCart, FiUser } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -11,15 +11,17 @@ const Navbar = () => {
       </div>
 
       {/* Center logo */}
-      <h1 className="text-xl italic font-semibold">Laiki</h1>
+      <h1 className="absolute inset-x-0 mx-auto text-xl italic font-body text-center">Laiki</h1>
 
       {/* Right icons + live button */}
       <div className="flex items-center space-x-4">
-        <button className="bg-accent text-white -700 px-4 py-1 text-sm rounded-full hover:bg-accent-300 transition">
-          live
-        </button>
-        <FaShoppingCart className="text-xl cursor-pointer" />
-        <FaUser className="text-xl cursor-pointer" />
+      <button className="bg-accent text-white px-4 py-1 text-sm rounded-full 
+      shadow-md hover:shadow-xl transition 
+      drop-shadow-[0_2px_4px_rgba(255,110,110,0.7)]">
+      live
+    </button>
+        <FiShoppingCart className="text-xl cursor-pointer" />
+        <FiUser className="text-xl cursor-pointer" />
       </div>
     </nav>
   );
