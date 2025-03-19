@@ -36,9 +36,7 @@ const Hero = () => {
           Women can share their craft, gain financial independence, and keep cultural traditions alive — one stitch, weave, and story at a time.
         </p>
 
-
-
-        <button className="bg-accent hover:bg-accent text-white px-6 py-2 rounded-md transition min-w-[280px]">
+        <button className="bg-accent hover:bg-accent text-white px-6 py-2 rounded-md transition-all duration-300 ease-in-out hover:!bg-textHeader hover:!text-white min-w-[280px] shadow-md hover:shadow-lg">
           Learn more
         </button>
       </div>

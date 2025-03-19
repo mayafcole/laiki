@@ -14,7 +14,7 @@ const Navbar = () => {
       <h1 className="absolute inset-x-0 mx-auto text-xl italic font-body text-center">Laiki</h1>
 
       {/* Right icons + live button */}
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center space-x-6">
       <button className="bg-accent text-white px-4 py-1 text-sm rounded-full 
       shadow-md hover:shadow-xl transition 
       drop-shadow-[0_2px_4px_rgba(255,110,110,0.7)]">

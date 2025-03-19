@@ -6,14 +6,15 @@ import crocheting from "../assets/GalleryImg4.png";
 
 const ArtSection = () => {
   return (
-    <section className="py-16 px-4 bg-background">
-      <h2 className="text-headers font-heading text-center mb-12 text-accent">
+    <section className="py-16 bg-white">
+      <h2 className="text-headers font-heading text-center mb-12 text-accent px-4">
         Art doesn’t just tell stories, it broadens{" "}
-        <span className="italic bold text-accent font-semibold">our futures.</span>
+        <span className="italic font-semibold">our futures.</span>
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-start">
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-[1400px] mx-auto px-6">
         {/* Left large image */}
-        <div>
+        <div className="w-full h-full">
           <img
             src={groupPhoto}
             alt="Group in art gallery"
@@ -22,7 +23,7 @@ const ArtSection = () => {
         </div>
 
         {/* Right side grid */}
-        <div className="grid grid-rows-[auto_auto] gap-2">
+        <div className="grid grid-rows-[60%_40%] gap-4">
           <div>
             <img
               src={weaving}
@@ -30,7 +31,7 @@ const ArtSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-4">
             <img
               src={pottery}
               alt="Woman painting pottery"

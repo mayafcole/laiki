@@ -4,7 +4,8 @@ import FeaturedProducts from "./components/FeaturedProducts";
 import Footer from "./components/Footer";
 import ArtSection from "./components/ArtSection";
 import ShopByCountry from "./components/ShopByCountry";
-import ShopByCategory from "./components/ShopByCountry";
+import ShopByCategory from "./components/ShopByCategory";
+import MeetArtisans from "./components/MeetArtisans"
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
       <FeaturedProducts />
       <ArtSection />
       <ShopByCountry />
-      {/* <ShopByCategory/> */}
-
+      <ShopByCategory/>
+      <MeetArtisans />
       <Footer />
     </div>
   );

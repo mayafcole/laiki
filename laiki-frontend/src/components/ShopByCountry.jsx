@@ -1,6 +1,6 @@
 const ShopByCountry = () => {
   return (
-    <section className="relative py-60 bg-pink overflow-hidden mt-40 ">
+    <section className="relative py-60 bg-pink  mt-40">
       {/* Background map image */}
       <img
         src="/src/assets/Laiki-map.png"
@@ -9,7 +9,7 @@ const ShopByCountry = () => {
       />
 
       {/* Section heading */}
-      <h2 className="text-textHeader font-heading font-semibold text-headers text-left pl-20 mb-8 relative z-10">
+      <h2 className="text-textHeader font-heading font-semibold text-headers text-left pl-10 mb-8 relative z-10 -top-64">
         Shop by country
       </h2>
 
@@ -21,7 +21,7 @@ const ShopByCountry = () => {
       {/* Dropdown with custom arrow */}
       <div className="flex justify-center relative z-10">
         <div className="relative w-[900px]">
-          <select className="appearance-none border border-textHeader text-textHeader rounded-lg px-6 py-3 w-full text-lg bg-white focus:outline-none focus:ring-2 focus:ring-textHeader cursor-pointer">
+          <select className="appearance-none border-[1px] border-textHeader text-textHeader rounded-lg px-6 py-3 w-full text-lg bg-white focus:outline-none focus:ring-2 focus:ring-textHeader cursor-pointer">
             <option value="">Select</option>
             <option value="brazil">Brazil</option>
             <option value="usa">United States of America</option>

@@ -1,43 +1,52 @@
-const categories = [
+const ShopByCategory = () => {
+  const categories = [
     {
-      name: "Fashion & Accessories",
-      image: "/images/fashion.jpg",
+      image: "/src/assets/jewlery.png", 
+      title: "Fashion & Accessories",
     },
     {
-      name: "Home & Living",
-      image: "/images/home-living.jpg",
+      image: "/src/assets/tempRug.png",
+      title: "Home & Living",
     },
     {
-      name: "Art & Collectibles",
-      image: "/images/art-collectibles.jpg",
+      image: "/src/assets/ArtandCollectibles.png",
+      title: "Art & Collectibles",
     },
     {
-      name: "Beauty & Wellness",
-      image: "/images/beauty-wellness.jpg",
+      image: "/src/assets/BeautyAndWellness.png",
+      title: "Beauty & Wellness",
     },
+    {
+      image: "/src/assets/Photography.jpg",
+      title: "Photography",
+    }
   ];
-  
-  const ShopByCategory = () => {
-    return (
-      <section className="py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Shop by category</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-8">
-          {categories.map((cat, index) => (
-            <div key={index} className="text-center">
-              <img
-                src={cat.image}
-                alt={cat.name}
-                className="w-40 h-40 mx-auto rounded-lg object-cover mb-4"
-              />
-              <h3 className="font-semibold mb-2">{cat.name}</h3>
-              <button className="border border-red-500 text-red-500 px-4 py-1 rounded hover:bg-red-500 hover:text-white transition">
-                Shop Now
-              </button>
-            </div>
-          ))}
-        </div>
-      </section>
-    );
-  };
-  
-  export default ShopByCategory;  
+
+  return (
+    <section className="relative pt-20 pb-32 bg-white">
+      <h2 className="text-textHeader font-heading font-semibold text-headers text-left pl-10 mb-16">
+        Shop by category
+      </h2>
+
+      <div className="max-w-12xl mx-auto px-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+        {categories.map((category, index) => (
+          <div key={index} className="text-center">
+            <img
+              src={category.image}
+              alt={category.title}
+              className="w-full h-60 object-contain mb-6 mx-auto"
+            />
+            <h3 className="font-body text-lg mb-4">{category.title}</h3>
+            <button className="w-[200px] px-4 py-2 border-[1px] border-textHeader text-textHeader rounded-md hover:bg-textHeader hover:text-white transition-colors">
+              Shop Now
+            </button>
+          </div>
+        ))}
+      </div>
+      </div>
+    </section>
+  );
+};
+
+export default ShopByCategory;
